@@ -33,7 +33,7 @@ Pomniek był dziełem współpracy Felixa Henrego, który odpowiadał za projekt
 Pomnik niestety uległ zniszczeniu poczas walk o Wrocław, a ponownie został odsłoniety w 1995 r w 190 rocznicę śmierci artysty i 50 rocznicę zakończenia II wojnie światowej.
 Johann Christoph Friedrich von Schiller urodzony 1759 r niemiecki poeta, filozofi, historyk, przedstawiciel klasyki weimarskiej, jego najbardziem znanym dziełem jest "Oda do radości". zmarł w 1805 r.
 
-H: Szalet przy ul. Różyckiego
+H: Szalet przy ulicy Różyckiego
 51.11565248408379, 17.07576334476471
 
 N: Źródełko 
@@ -52,7 +52,7 @@ N: Staw północny II
 N: Staw Południowy II
 51.11199763084283, 17.079421190908928
 
-H: Kościół św. Jana Nepomucena
+H: Kościół świętego Jana Nepomucena
 51.10868204273903 17.08271563053131
 Kościół pierwotnie powstał w XVI wieku w Starym Koźlu. W ramach ochrony zabytków, w 1913 roku kościół został rozebrany i przewieziony do Wrocławia, na jego starym miejcu stanął nowy mórowany. 
 Kościół istnieje obecnie dzięki staraniom Theo Effenbergera, który był odpowiedzialny za organizację całego przedsiemwzięcia i sfinasowaniu przez Adolfa Weickerta.
@@ -76,7 +76,7 @@ UWAGA: wymagany bilet do Ogrodu botanicznego.
 Utworzony w drugiej połowie XIX wieku w latach 1877, 1878. Początkowo miał 40 arów powierzchni, lecz został powiększony do 100 arów w 1884 r. 
 Obecnie znajduje się na terenie Ogrodu Japońskiego, a w samym stawie pływają kolorowe Japońskie karpie.
 
-N: Skwer im. Zbyszka Cybulskiego
+N: Skwer Cybulskiego
 51.10806299587868, 17.07272171974182
 
 Pergola
@@ -106,8 +106,9 @@ N: Ogród kwiatowy
 (Skwer im. Charlesa Proteusa Steinmetza)
 51.111973, 17.085616
 
-N: Sad wiśniowy ???
+N: Alejki wiśniowe
 51.113601, 17.078834
+Alejki japońsiej wiśni Sakura posadzone z okazji 50 rocznicy wznowienia stosuków dyplomtycznych Polski z Japonią, drzewka zostały ufundowane przez stoważyszenie Japan Blosom Asociation "Ikouaki"
 
 N: Dąb Henryka
 51.112888, 17.085760

@@ -107,6 +107,7 @@ public class FragmentMainMap extends Fragment implements OnMapReadyCallback
     private int myRate;
     //FragmentActivity activity;
     private GoogleMap googleMap;
+    private ImageView image;
 
     DatabaseReference databaseRootReference = FirebaseDatabase.getInstance().getReference();
     DatabaseReference databaseChildReference = databaseRootReference.child("ParkObject");
@@ -197,15 +198,17 @@ public class FragmentMainMap extends Fragment implements OnMapReadyCallback
         {
             Marker marker = googleMap.addMarker(new MarkerOptions()
                     .position(new LatLng(object.getLatitude(), object.getLongitude()))
-                    .snippet(object.getHeading())
                     .title(object.getName())
-                    .icon(BitmapDescriptorFactory.//fromResource(object.getPointerType())));
-                            fromBitmap(createCustomMarker(getContext(), object.getPointerType(), object.getName()))));
+                    //todo fix createCustomMarker null pointer
+                    //.icon(BitmapDescriptorFactory.//fromResource(object.getPointerType())));
+                    //        fromBitmap(createCustomMarker(getContext(), object.getPointerType(), object.getName())))
+            );
 
             object.setMarker(marker);
             hashMarkerMap.put(marker.hashCode(), object);
         }
 
+        //todo title as text under marker in marker color, setOnInfoWindowClickListener change to setOnMarkerClickListener
         googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker)
@@ -237,11 +240,9 @@ public class FragmentMainMap extends Fragment implements OnMapReadyCallback
 
         //setMarkers();
     }
-    //TODO
-    private ImageView image;
+
     private void setParkObject(ParkObject parkObject)
     {
-
         currentObject = parkObject;
         //TODO
         image = navigationObject.findViewById(R.id.image_object);
@@ -266,7 +267,6 @@ public class FragmentMainMap extends Fragment implements OnMapReadyCallback
                         navigationObject.findViewById(R.id.button_my_rate4),
                         navigationObject.findViewById(R.id.button_my_rate5)
                 };
-        //TODO muci być zalogowany aby wysłać ocenę
         setStarsImages(currentObject.getMyRate(), myRateButtons);
         OnClickListener ratesFilterListener = new OnClickListener()
         {
@@ -284,9 +284,7 @@ public class FragmentMainMap extends Fragment implements OnMapReadyCallback
                     if(Math.abs(rateDif) > .1f)
                         setRate(navigationObject, currentObject.getRate() + rateDif);
                 }
-
-
-                //TODO prześlij ocenę do systemu
+                //todo save to fireBase (currentObject.getMyRate(), device id)
             }
         };
 
@@ -349,41 +347,11 @@ public class FragmentMainMap extends Fragment implements OnMapReadyCallback
                 rateButtons[i].setImageResource(R.drawable.ic_empty_star);
     }
 
-    public void/*ArrayList<ParkObject>*/ sendParkObjects()
+    public void sendParkObjects()
     {
         //TODO check
         Scanner sc = new Scanner(getResources().openRawResource(R.raw.objects));//.useDelimiter("\n");
         List<ParkObject> parkObjects = create(sc);
-        /*
-        parkObjects.add(new ParkObject(
-                0,
-                0,
-                "Park Szczytnicki",
-                "",
-                "\tPark Szczytnicki, jest drugim co do wielkości parkiem Wrocławia, zajmuję powierzchnię około 87.3 hekta, pod względem powierzchniowym wyprzedza go jedynie park Tysiąclecia, który jest o niecałe 3 hektary większy. Park Szczytnicki, położony jest na wschód od Starej Odry, na terenie dawnej wsi Szczytniki, włączonej w obręb miasta w 1868 roku. Park ma charakter krajobrazowy i duże walory kompozycyjne oraz dendrologiczne, około 400 gatunków drzew i krzewów, pod tymi względami jest to najbogatrzy park Wrocławia.\n" +
-                        "\n" +
-                        "Historia:\n" +
-                        "\tW XVI wieku wieś Szczytniki została podzielona na Nowe i Stare Szczytniki, które w XVII wieku zamieniły się w podmiejskie osiedla rezydencjonalne. Las na terenie Starych Szczytnik już w połowie XVIII wieku cieszył się powodzeniem wśród wrocławian. W 1783 roku Fryderyk Ludwik Hohenlohe, komendant garnizonu wrocławskiego, wykupił go i założył tu jeden z pierwszych parków na kontynencie europejskim urządzonych w stylu angielskim.\n" +
-                        "\tPark został zdewastowany przez żołnierzy napoleońskich podczas oblężenia miasta w grudniu 1806 roku. Po wojnie większość szkód naprawiono. W 1833 roku w parku Szczytnickim odbyły się pierwsze sportowe wyścigi konne we Wrocławiu. Wyścigi organizowano aż do roku 1907, na terenach przylegających do obecnej Hali Stulecia.\n" +
-                        "\tW parku znajduje się Ogród Japoński założony w latach 1909–1912, w związku z Wystawą Stulecia z 1913 roku, z inicjatywy hrabiego Fritza von Hochberga, i zaprojektowany przez japońskiego ogrodnika Mankichiego Araia. Po wystawie zabrano jednak większość z wypożyczonych detali decydujących o japońskim charakterze ogrodu. W 1994 roku przy współpracy ambasady japońskiej, prof. Ikuya Nishikawy i ogrodników z Nagoi rozpoczęto prace przywracające ogrodowi japoński charakter. Współcześnie jest to już Ogród Japoński nie tylko z nazwy. Stanowi unikatowy w Europie żywy fragment japońskiej kultury. Rząd Japonii przekazał do Ogrodu kilka granitowych latarń z XIX wieku. Japończycy nazwali ogród Hakkoen, tzn. Ogród białoczerwony.",
-                ParkObject.POINTER_OTHER,
-                3.9f,
-                101,
-                "",
-                5));
-
-        parkObjects.add(new ParkObject(
-                51.112,
-                17.083,
-                "Fontanna multimedialna",
-                "Największa fontanna w polsce o powierzchni 1ha",
-                "Położona w malowniczym parku Szczytnickim, otoczona pergolą i w bezpośrednim sąsiedztwie Hali Stulecia, multimedialna wrocławska fontanna jest największym tego typu obiektem w Polsce i jednym z największych w Europie. Jej powierzchnia wynosi ok. 1 hektara. W fontannie zainstalowano prawie 300 dysz, z których tryska woda w formie gejzerów, mgiełki, piany itp. na wysokość nawet 40 m. Tym sposobem tworzy się ogromny ekran wodny, na którym wyświetlane są wizualizacje z towarzyszeniem muzyki i efektów laserowych.",
-                ParkObject.POINTER_CULTURE,
-                3.9f,
-                12,
-                "<a href=\"https://pik.wroclaw.pl/wroclawska-fontanna-multimedialna-pergola-pokazy-specjalne\">Pokazy Specjalne</a>",
-                1));
-        //*/
 
         Map<String, ParkObject> parkObjectMap = new HashMap<>();
         for (ParkObject parkObject :  parkObjects)
@@ -606,28 +574,6 @@ public class FragmentMainMap extends Fragment implements OnMapReadyCallback
 
     public Bitmap createCustomMarker(Context context, @DrawableRes int resource, String _name)
     {
-        /*
-            View marker = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.marker_layout, null);
-
-            ImageView markerImage = marker.findViewById(R.id.user_dp);
-            //markerImage.setColorFilter(R.color.white);
-            markerImage.setImageResource(resource);
-            TextView txt_name = marker.findViewById(R.id.name);
-            txt_name.setText(_name);
-
-            DisplayMetrics displayMetrics = new DisplayMetrics();
-            ((Activity) context).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-            marker.setLayoutParams(new ViewGroup.LayoutParams(152, ViewGroup.LayoutParams.WRAP_CONTENT));
-            marker.measure(displayMetrics.widthPixels, displayMetrics.heightPixels);
-            marker.layout(0, 0, displayMetrics.widthPixels, displayMetrics.heightPixels);
-            marker.buildDrawingCache();
-            Bitmap bitmap = Bitmap.createBitmap(marker.getMeasuredWidth(), marker.getMeasuredHeight(), Bitmap.Config.ARGB_8888);
-            Canvas canvas = new Canvas(bitmap);
-            marker.draw(canvas);
-        */
-
-        //bitmap = BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length)
-        //profileImage.setImageBitmap(Bitmap.createScaledBitmap(b, 120, 120, false));
         return Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), resource), 38, 60, false);
     }
 

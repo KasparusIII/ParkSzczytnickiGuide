@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 public class Fragment2 extends Fragment
 {
-    int[] IMAGES = new int[] {R.drawable.nature, R.drawable.history, R.drawable.culture};
+    int[] IMAGES = new int[] {R.drawable.cat_photo_nature, R.drawable.cat_photo_history, R.drawable.cat_photo_culture};
     public Fragment2() {}
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

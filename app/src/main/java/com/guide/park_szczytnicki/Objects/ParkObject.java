@@ -136,6 +136,7 @@ public class ParkObject
 
     public void filterMarker(boolean[] filterCategories, String filterName, int filterRate, int filterMinRateNum, int filterMaxRateNum)
     {
+        //todo to fix
         if (marker != null)
             if (        filterCategories[0] && pointerType == R_DRAWABLE_POINTERS[0]
                     ||  filterCategories[1] && pointerType == R_DRAWABLE_POINTERS[1]

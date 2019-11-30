@@ -2,6 +2,7 @@ package com.guide.park_szczytnicki.Objects;
 
 import java.io.*;
 import java.util.*;
+import com.guide.park_szczytnicki.R;
 
 //@SuppressWarnings("FieldCanBeLocal")
 public class Upload
@@ -9,10 +10,13 @@ public class Upload
     private static final Map<String, Integer> POINTER_TYPES = new HashMap<>();
     static
     {
-        POINTER_TYPES.put("N", 0);
-        POINTER_TYPES.put("C", 1);
-        POINTER_TYPES.put("H", 2);
+        POINTER_TYPES.put("N", R.drawable.pointer_nature);
+        POINTER_TYPES.put("H", R.drawable.pointer_history);
+        POINTER_TYPES.put("C", R.drawable.pointer_culture);
+        POINTER_TYPES.put("O", R.drawable.pointer_other);
+
     }
+
     private static final String REGEX_SEPARATORS = ", |: ";
     private static final String REGEX_COORDINATES_SEPARATORS = ", | ";
     private static final String ADDITIONAL_NAME_TEXT = "Obiekt jest również znany pod nazwą ";
@@ -96,21 +100,29 @@ public class Upload
 
     public static void ratesGenerator(List<ParkObject> parkObjects)
     {
-        int max = Integer.MIN_VALUE;
+        double maxRate  = 6.;
+        double maxVotes = 3_000;
         for (ParkObject parkObject : parkObjects)
         {
-            int curr = parkObject.getInfo().length();
-            if (curr > max)
-                max = curr;
-        }
-        double ratingParameter = max  / 20.;
-        int    votes           = 3000 / 5;
-        for (ParkObject parkObject : parkObjects)
-        {
-            float rating = (float)Math.min(5., (parkObject.getInfo().length() * Math.random() / ratingParameter));
+            float rating = (float)Math.min(5., (maxRate * Math.random()));
             parkObject.setRate(rating);
-            parkObject.setRateNum((int) (votes * Math.random() * rating));
+            parkObject.setRateNum((int) (maxVotes * Math.random()));
         }
+//        int max = Integer.MIN_VALUE;
+//        for (ParkObject parkObject : parkObjects)
+//        {
+//            int curr = parkObject.getInfo().length();
+//            if (curr > max)
+//                max = curr;
+//        }
+//        double ratingParameter = max  / 20.;
+//        int    votes           = 3000 / 5;
+//        for (ParkObject parkObject : parkObjects)
+//        {
+//            float rating = (float)Math.min(5., (parkObject.getInfo().length() * Math.random() / ratingParameter));
+//            parkObject.setRate(rating);
+//            parkObject.setRateNum((int) (votes * Math.random() * rating));
+//        }
     }
 
     public static ParkObject createParkObjectFromInfo(Object[] infoParkObject)
