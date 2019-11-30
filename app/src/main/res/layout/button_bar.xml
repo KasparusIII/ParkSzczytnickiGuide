@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_map"
+        android:layout_weight="5"
+        android:drawableStart="@drawable/ic_map"
+        android:text="@string/map"
+        style="@style/ButtonBar" />
+
+    <Button
+        android:id="@+id/button_categories"
+        android:layout_weight="6"
+        android:drawableStart="@drawable/ic_categories"
+        android:text="@string/categories"
+        style="@style/ButtonBar" />
+
+    <Button
+        android:id="@+id/button_routs"
+        android:layout_weight="5"
+        android:drawableStart="@drawable/ic_routs"
+        android:text="@string/routs"
+        style="@style/ButtonBar" />
+
+    <Button
+        android:id="@+id/button_achievements"
+        android:layout_weight="7"
+        android:drawableStart="@drawable/ic_achievements"
+        android:text="@string/achievements"
+        style="@style/ButtonBar" />
+</LinearLayout>

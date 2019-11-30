@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1023848518534",
+    "firebase_url": "https://guideszczytnicki-1569928602414.firebaseio.com",
+    "project_id": "guideszczytnicki-1569928602414",
+    "storage_bucket": "guideszczytnicki-1569928602414.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023848518534:android:f236e4ccd133fe36775207",
+        "android_client_info": {
+          "package_name": "com.guide.park_szczytnicki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023848518534-g59fpn34sb7a9lokjbhs5tv08nbpoje1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.guide.park_szczytnicki",
+            "certificate_hash": "8d5a41a0e614fcc6d1b34970b68c29c3f525b6b5"
+          }
+        },
+        {
+          "client_id": "1023848518534-bbdncrq5ip3qrrv2matdpg5ldgivr7q1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCofa1a_HB-gouzgrtXTvPF1hX8hW63Upw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023848518534-bbdncrq5ip3qrrv2matdpg5ldgivr7q1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/text_filters"
+        style="@style/TextDefault"
+        android:gravity="top|center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="64sp"
+        android:text="Filtry"/>
+
+    <LinearLayout
+        style="@style/VerticalLayoutSet">
+        <TextView
+            android:id="@+id/text_categories"
+            android:text="Kategorie"
+            style="@style/TextFilterTitle" />
+        <LinearLayout
+            style="@style/HorizontalLayoutSet">
+            <LinearLayout
+                style="@style/HorizontalSetVerticalLayout">
+                <ImageView
+                    android:id="@+id/image_nature1"
+                    android:src="@drawable/pointer_nature"
+                    style="@style/ImageMenuPointer" />
+                <TextView
+                    android:id="@+id/text_nature"
+                    android:text="Przyroda"
+                    style="@style/TextCategoryFilter"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalSetVerticalLayout">
+                <ImageView
+                    android:id="@+id/image_history2"
+                    android:src="@drawable/pointer_history"
+                    style="@style/ImageMenuPointer" />
+                <TextView
+                    android:id="@+id/text_history"
+                    android:text="Historia"
+                    style="@style/TextCategoryFilter"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalSetVerticalLayout">
+                <ImageView
+                    android:id="@+id/image_culture3"
+                    android:src="@drawable/pointer_culture"
+                    style="@style/ImageMenuPointer" />
+                <TextView
+                    android:id="@+id/text_culture"
+                    android:text="Kultura i rozrywka"
+                    style="@style/TextCategoryFilter"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/VerticalLayoutSet">
+        <TextView
+            android:id="@+id/text_search"
+            android:text="Wyszukaj"
+            style="@style/TextFilterTitle"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_search"
+            android:hint="Nazwa obiektu:"
+            style="@style/DefaultInPut"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/VerticalLayoutSet">
+        <TextView
+            android:id="@+id/text_rating"
+            android:text="Ocena"
+            style="@style/TextFilterTitle"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/button_rate1"
+                style="@style/ButtonStar"  />
+            <ImageButton
+                android:id="@+id/button_rate2"
+                style="@style/ButtonStar" />
+            <ImageButton
+                android:id="@+id/button_rate3"
+                style="@style/ButtonStar" />
+            <ImageButton
+                android:id="@+id/button_rate4"
+                style="@style/ButtonStar" />
+            <ImageButton
+                android:id="@+id/button_rate5"
+                style="@style/ButtonStar"  />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/VerticalLayoutSet">
+        <TextView
+            android:id="@+id/text_ratings"
+            android:text="Ilość ocen"
+            style="@style/TextFilterTitle"/>
+        <LinearLayout
+            style="@style/HorizontalLayoutSet">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/input_minRatings"
+                android:hint="0"
+                style="@style/FilterRatesNumberInPut"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/input_maxRatings"
+                android:hint="100"
+                style="@style/FilterRatesNumberInPut"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="62dp"
+        android:id="@+id/text_my_rate"
+        android:text="Wyczyść fitry"
+        style="@style/TextFilterTitle"/>
+</LinearLayout>

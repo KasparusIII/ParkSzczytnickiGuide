@@ -1,0 +1,119 @@
+H: Kolumna Frederyka Wilchelma II
+51.11518, 17.08122432231903
+Wybudowana na czci Frederyka Wilchelma II Hohenzollerna najprawdopodobniej po jego śmierci w 1797r. Pierwotnie była konstrukcją drewnianą wzorowaną na kolumnie Trajana, niestety w kilka lat po wybudowaniu, na początku XIX wieku ulega pożarowi, po którym została odbudowana już jako konstrukcja murowana. 
+Kolumna  ma wysokość ponad 20 m, a zwieńczona jest statułą króla Frederyka Wilchelma II Hohenzollerna -  urodzonego w 1844, który w 1786 został konronowany na króla pruskiego, zmarł w 1797 r.
+
+H: Pomnik Diany
+(Dianegruppe)
+51.107937703508, 17.07252860069275
+Pomnik powstały w 1898 r. znajduje się na połódniowo zachodnim skraju parku przy skrzyżowaniu ulicy Wrublewskiego i Mickiewicza, pierwotnie jednak miał zostać postawiony w głębi parku.
+Pomnik przedstawia boginie łowów i przyrody, antcznego rzymu - Dianę. Pomnik ukazuje ją podczas polowania. Jej postać usytułowana jest na głazach, które wraz z otaczającą je roślinnością, mają imitować krajobraz alpejski. Postać w ręku trzyma włucznie, którą przygotowywuje do rzutu, a towrzyszą jej dwa psy myśliwskie goniace za zwierzyną.
+Pomnik niestety zaginął po II wojnie światowej w 1945 r. Aktualnie w parku znajduje się jego rekonstrukcja, odsłonięta w 2015 r.
+Autorem pomnika był Ernst Seger, a za jego rekonstrukcję odpowiada Ryszard Zarycki.
+
+H: Mostek Moritza Eichborna 
+(Kładka na Czarną Wodą)
+51.108060975016784 17.081739306449894
+Żeliwny mostek łukowy wybudowany w 1888 roku. Jego znakiem jest rozpoznawczym jest pięknie zdobiona barierka zwieńczona miedzianym lwem i dębowymi liśćmi.
+
+N: Alpinarium 
+(ogród kamienny)
+51.10832839889774, 17.08850383758545
+Fragment dawnego szkolnego ogrodu botanicznego. Malowniczy skalniak nad stwem północnym w klimacie alpejskim, ukazuje głazy narzutowe wraz z górską roslinnością.
+
+N: Dąb Jana Stanki
+(Dąb Gustava Adolfa Fintelmanna)
+51.112733597649346, 17.080913186073303
+Pomnik przyrody przeszło stuletni dąb z 1879 roku pierotnie nośił nazwę dębu Gustava Adolfa Fintelmanna. Po 1945 r został przemianowany na dąb Jana Stanki, pod dębem znajduje się głaz narzutowy z jego aktualną nazwą.
+
+H: Pomnik Friedricha von Schillera
+51.11330274025039, 17.083203792572025
+Pomnik został wzniesiony w setną rocznicę śmierci Friedricha von Schillera, powstał on dzieki przedwojennemu stowarzyszeniu imienia Schillera.
+Pomniek był dziełem współpracy Felixa Henrego, który odpowiadał za projekt architektoniczny i Ludwig Menzl, który wykonał popiersie wzorując się na rzeźbie Johanna Heinricha Danneckera.
+Pomnik niestety uległ zniszczeniu poczas walk o Wrocław, a ponownie został odsłoniety w 1995 r w 190 rocznicę śmierci artysty i 50 rocznicę zakończenia II wojnie światowej.
+Johann Christoph Friedrich von Schiller urodzony 1759 r niemiecki poeta, filozofi, historyk, przedstawiciel klasyki weimarskiej, jego najbardziem znanym dziełem jest "Oda do radości". zmarł w 1805 r.
+
+H: Szalet przy ul. Różyckiego
+51.11565248408379, 17.07576334476471
+
+N: Źródełko 
+51.110167, 17.083361
+Pozostalość po dawnym źródełku wody pitnej.
+Kamienne żródełko jest przyozdobione ornamentem roślinnym.
+
+H: Pomnik Josefa von Eichendorffa
+51.114943, 17.083773
+Pomnik niestety zaginął po II wojnie światowej w 1945 r. jego replika znajduje się w Ogrodzie botanicznym Uniwresytetu wrocławskiego. W parku pozostał jedynie jego postument.
+Joseph Carl Benedikt hrabia von Eichendorf urodzony w 1788 r, nemiecki pisarz i poeta epoki romantyzmu. W lata 1801 - 1820 mieszkał we Wrocławiu, gdzie się uczył pracował oraz tworył. Zmarł w 1857 w Nysie, gdzie na cmetarzy przy ulicy ul. Mieczysława I znajduje się jego grób.
+
+N: Staw północny II
+51.11327220649722, 17.082440383976685
+
+N: Staw Południowy II
+51.11199763084283, 17.079421190908928
+
+H: Kościół św. Jana Nepomucena
+51.10868204273903 17.08271563053131
+Kościół pierwotnie powstał w XVI wieku w Starym Koźlu. W ramach ochrony zabytków, w 1913 roku kościół został rozebrany i przewieziony do Wrocławia, na jego starym miejcu stanął nowy mórowany. 
+Kościół istnieje obecnie dzięki staraniom Theo Effenbergera, który był odpowiedzialny za organizację całego przedsiemwzięcia i sfinasowaniu przez Adolfa Weickerta.
+Drewniany zabytek obenie znajduje się obecnie w południowej części parku Sczytnickiego nieopodal Pergoli.
+
+H: Drewniany mostek I
+51.112579, 17.081100
+
+H: Drewniany mostek II
+51.11087466575614, 17.079063032416116
+
+C: Plac zabaw
+51.114859, 17.079466
+
+C: Kompleks paców zabaw
+51.116754, 17.079034
+
+N: Staw Eichborna
+51.11016597015207, 17.080172896385193
+UWAGA: wymagany bilet do Ogrodu botanicznego.
+Utworzony w drugiej połowie XIX wieku w latach 1877, 1878. Początkowo miał 40 arów powierzchni, lecz został powiększony do 100 arów w 1884 r. 
+Obecnie znajduje się na terenie Ogrodu Japońskiego, a w samym stawie pływają kolorowe Japońskie karpie.
+
+N: Skwer im. Zbyszka Cybulskiego
+51.10806299587868, 17.07272171974182
+
+Pergola
+51.109402794190416, 17.079448699951172
+
+H: Iglica
+51.10758405397128, 17.075554132461548
+
+C: Pawilon Czterech Kopuł
+51.10838565570328, 17.0762300491333
+
+N: Ogród Japoński
+51.109659, 17.079028
+Ogród w pięknej japońskiej stylistyce. na terenie ogrodu znajdują się oryginalnie zaranżowane drewniane domki, staw Eichborna z malowniczym drewnianym pomostem oraz pływającymi w nim japońskimi kolorowymi karpiami
+Historia ogrodu sięga 1913r kiedy na potrzeby wtedy oraganizowanej wystawy światowej, z inicjatywy hrabii Fritz von Hochberga, powstał czasowy ogród japoński zaaranżowany przez japońskiego ogrodnika Mankichi Arai. Jednak po zakończeniu wystawy światowej zabudowę ogrodu rozebrano, pozostał jedynie układ alejek oraz oryginalna roślinność oraz staw Eichborna.
+
+C: Planetarium Instytutu Astronomicznego
+51.109881, 17.086336
+
+C: Obserwatorium astronomiczne
+51.109495, 17.085632
+
+C: Hala Stulecia
+51.106853, 17.077347
+
+N: Ogród kwiatowy
+(Skwer im. Charlesa Proteusa Steinmetza)
+51.111973, 17.085616
+
+N: Sad wiśniowy ???
+51.113601, 17.078834
+
+N: Dąb Henryka
+51.112888, 17.085760
+
+N: Kląby z krzewami róż
+51.113235, 17.086966
+
+N: Wgłębnik
+51.113378, 17.086284

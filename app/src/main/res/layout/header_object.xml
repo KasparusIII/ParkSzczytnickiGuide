@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <LinearLayout
+        style="@style/HorizontalLayoutSet">
+    <Button
+        android:id="@+id/button_back"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ic_back"
+        android:background="@color/colorPrimaryDark"
+        android:text="Powrót"
+        style="@style/ButtonBar" />
+
+    <Button
+        android:id="@+id/button_correction"
+        android:layout_marginStart="64dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_correction"
+        android:text="Zgłoś Poprawkę"
+        style="@style/ButtonBar" />
+
+    </LinearLayout>
+
+
+<RelativeLayout
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:foregroundGravity="bottom"
+        android:id="@+id/image_object"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:src="@drawable/dsc0735"/>
+
+    <LinearLayout
+        android:layout_alignBottom="@id/image_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_marginTop="7dp"
+                android:id="@+id/button_rate1"
+                style="@style/ButtonStar"  />
+            <ImageButton
+                android:layout_marginTop="7dp"
+                android:id="@+id/button_rate2"
+                style="@style/ButtonStar" />
+            <ImageButton
+                android:layout_marginTop="7dp"
+                android:id="@+id/button_rate3"
+                style="@style/ButtonStar" />
+            <ImageButton
+                android:layout_marginTop="7dp"
+                android:id="@+id/button_rate4"
+                style="@style/ButtonStar" />
+            <ImageButton
+                android:layout_marginTop="7dp"
+                android:id="@+id/button_rate5"
+                style="@style/ButtonStar"  />
+            <TextView
+                android:layout_marginStart="8dp"
+                android:id="@+id/text_rate"
+                style="@style/TextDefault"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="38sp"
+                android:text="3,5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_object_title"
+            style="@style/TextDefault"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="32sp"
+            android:text="Hala Sulecia"/>
+
+    </LinearLayout>
+</RelativeLayout>
+    <TextView
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/text_info"
+        android:text="Informacje:"
+        android:gravity="start"
+        style="@style/TextFilterTitle"/>
+
+    <WebView
+        android:paddingBottom="8dp"
+        android:id="@+id/text_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/text_additional_info"
+        android:text="Dodatkowe informacje:"
+        style="@style/TextFilterTitle"/>
+
+
+    <WebView
+        android:paddingBottom="8dp"
+        android:id="@+id/text_additional_info_content"
+        android:textColor="@color/culture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="62dp"
+        android:id="@+id/text_my_rate"
+        android:text="Moja ocena:"
+        style="@style/TextFilterTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/button_my_rate1"
+            style="@style/ButtonStar"  />
+        <ImageButton
+            android:id="@+id/button_my_rate2"
+            style="@style/ButtonStar" />
+        <ImageButton
+            android:id="@+id/button_my_rate3"
+            style="@style/ButtonStar" />
+        <ImageButton
+            android:id="@+id/button_my_rate4"
+            style="@style/ButtonStar" />
+        <ImageButton
+            android:id="@+id/button_my_rate5"
+            style="@style/ButtonStar"  />
+    </LinearLayout>
+</LinearLayout>

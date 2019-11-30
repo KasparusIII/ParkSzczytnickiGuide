@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Park Szczytnicki - Przewodnik</string>
+    <string name="title_activity_map">Map</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map2</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="registry_text">Nie masz konta? Zarejestruj się!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="map">Mapa</string>
+    <string name="categories">Kategorie</string>
+    <string name="routs">Trasy</string>
+    <string name="achievements">Osiągnięcia</string>
+    <string name="rateNumber">Ilość ocen</string>
+    <string name="clear_filter">Wyczyść fitry</string>
+    <string name="min_rates_number">0</string>
+    <string name="max_rates_number">100</string>
+    <string name="search">Wyszukaj</string>
+    <string name="search_hint">Nazwa obiektu:</string>
+    <string name="culture_full_name">Kultura i rozrywka</string>
+    <string name="history">Historia</string>
+    <string name="nature">Przyroda</string>
+    <string name="filters">Filtry</string>
+    <string name="rate">Ocena</string>
+    <string name="rate_star">Rate star</string>
+    <string name="pointer_culture">Pointer culture</string>
+    <string name="pointer_history">Pointer history</string>
+    <string name="pointer_nature">Pointer nature</string>
+    <string name="bridge_image_description">Bridge from park Szczytnicki</string>
+    <string name="test_text">hallo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

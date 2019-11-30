@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:contentDescription="@string/bridge_image_description"
+            android:src="@drawable/logo_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/bGoogleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/e_mail"
+            android:maxLength="64" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:maxLength="64"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_sign_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:padding="12dp"
+            android:text="@string/sign_in"/>
+
+        <TextView android:id="@+id/link_sign_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registry_text"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:textSize="16sp"/>
+
+        <TextView android:id="@+id/tvStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_text"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/bSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"/>
+
+    </LinearLayout>
+</ScrollView>
